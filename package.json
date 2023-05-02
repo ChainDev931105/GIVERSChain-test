@@ -241,7 +241,9 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "test": "mocha"
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:goerli": "hardhat run --network goerli scripts/givers.js"
   },
   "author": "@nmsteve",
   "license": "ISC",
